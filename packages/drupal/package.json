@@ -1,6 +1,6 @@
 {
   "name": "@woldtwerk/drupal",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -9,7 +9,7 @@
   "devDependencies": {
     "vite": "^2.5.4"
   },
-  "gitHead": "0b5e58c49d81ba9d7604e8840cb0f437864cb8ef",
+  "gitHead": "6747720d6fc9057145f4d5135485c8def8ecd528",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

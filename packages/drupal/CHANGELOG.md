@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.5](https://github.com/woldtwerk/utilities/compare/@woldtwerk/drupal@0.0.4...@woldtwerk/drupal@0.0.5) (2021-09-07)
+
+**Note:** Version bump only for package @woldtwerk/drupal
+
+
+
+
+
 ## [0.0.4](https://github.com/woldtwerk/utilities/compare/@woldtwerk/drupal@0.0.3...@woldtwerk/drupal@0.0.4) (2021-09-07)
 
 **Note:** Version bump only for package @woldtwerk/drupal
