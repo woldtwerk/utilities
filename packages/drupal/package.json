@@ -1,0 +1,12 @@
+{
+  "name": "@woldtwerk/drupal",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.5.4"
+  }
+}
