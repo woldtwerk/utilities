@@ -1,7 +1,15 @@
 {
   "search.exclude": {
     "**/.yarn": true,
-    "**/.pnp.*": true
+    "**/.pnp.*": true,
+    "dist/**/*": true
+  },
+  "files.exclude": {
+    "yarn-error.log": true,
+    ".yarn": true,
+    "dist": true,
+    "**/node_modules": true,
+    ".pnp.js": true
   },
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true

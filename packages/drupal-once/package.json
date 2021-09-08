@@ -1,0 +1,41 @@
+{
+  "name": "@woldtwerk/drupal-once",
+  "version": "0.0.0",
+  "author": "Willi Woldt <woldt.willi@gmail.com>",
+  "description": "Drupal once with typescript",
+  "keywords": [
+    "drupal",
+    "once",
+    "typescipt",
+    "@drupal/once"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:woldtwerk/utilities.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "test": "jest"
+  },
+  "files": [
+    "src",
+    "dist",
+    "@types"
+  ],
+  "main": "dist/umd/index.js",
+  "module": "dist/es/index.js",
+  "types": "@types/index.d.ts",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.1.1",
+    "ts-jest": "^27.0.5",
+    "vite": "^2.5.4"
+  },
+  "gitHead": "6747720d6fc9057145f4d5135485c8def8ecd528",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
