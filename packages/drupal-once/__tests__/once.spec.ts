@@ -22,7 +22,7 @@ describe('Test once()', () => {
 
   test('Check if elements were onced', () => {
     document.querySelectorAll('.once-me-please').forEach((element) => {
-      expect(element.drupalOnce.has('once')).toBeTruthy
+      expect(element.drupalOnce?.has('once')).toBeTruthy
     })
   })
 
@@ -44,7 +44,7 @@ describe('Test once() with custom key', () => {
 
   test('Check if elements were onced', () => {
     document.querySelectorAll('.once-with-key').forEach((element) => {
-      expect(element.drupalOnce.has('myOnceKey')).toBeTruthy
+      expect(element.drupalOnce?.has('myOnceKey')).toBeTruthy
     })
   })
 
@@ -62,12 +62,12 @@ describe('Test once() with multiple keys', () => {
     document.querySelectorAll('.once-with-key').once('myOnceKey')
     document.querySelectorAll('.once-with-key').once('myOnceKey2')
     document.querySelectorAll('.once-with-key').once('myOnceKey3')
-    const element = document.querySelector('.once-with-key')
+    const element = document.querySelector('.once-with-key')!
 
     expect(element.hasOwnProperty('drupalOnce')).toBeTruthy
-    expect(element.drupalOnce.size).toEqual(3)
-    expect(element.drupalOnce.has('myOnceKey'))
-    expect(element.drupalOnce.has('myOnceKey2'))
-    expect(element.drupalOnce.has('myOnceKey3'))
+    expect(element.drupalOnce?.size).toEqual(3)
+    expect(element.drupalOnce?.has('myOnceKey'))
+    expect(element.drupalOnce?.has('myOnceKey2'))
+    expect(element.drupalOnce?.has('myOnceKey3'))
   })
 })

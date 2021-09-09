@@ -28,11 +28,11 @@ describe('Test remomveOnce()', () => {
     document.body.innerHTML = dom
     document.querySelectorAll('.once-with-key').once()
     expect(
-      document.querySelector('.once-with-key').drupalOnce.has('once')
+      document.querySelector('.once-with-key')!.drupalOnce?.has('once')
     ).toBeTruthy()
     document.querySelectorAll('.once-with-key').removeOnce()
     expect(
-      document.querySelector('.once-with-key').hasOwnProperty('drupalOnce')
+      document.querySelector('.once-with-key')!.hasOwnProperty('drupalOnce')
     ).toBeFalsy()
   })
 
@@ -40,12 +40,16 @@ describe('Test remomveOnce()', () => {
     document.body.innerHTML = dom
     document.querySelectorAll('.once-with-key').once()
     document.querySelectorAll('.once-with-key').once('once2')
-    expect(document.querySelector('.once-with-key').drupalOnce.size).toEqual(2)
+    expect(document.querySelector('.once-with-key')!.drupalOnce?.size).toEqual(
+      2
+    )
     document.querySelectorAll('.once-with-key').removeOnce('once')
-    expect(document.querySelector('.once-with-key').drupalOnce.size).toEqual(1)
+    expect(document.querySelector('.once-with-key')!.drupalOnce?.size).toEqual(
+      1
+    )
     document.querySelectorAll('.once-with-key').removeOnce('once2')
     expect(
-      document.querySelector('.once-with-key').hasOwnProperty('drupalOnce')
+      document.querySelector('.once-with-key')!.hasOwnProperty('drupalOnce')
     ).toBeFalsy()
   })
 })
