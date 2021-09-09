@@ -23,14 +23,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."
       },
       {
+        "name": "@woldtwerk/boring-table",
+        "reference": "workspace:packages/boring-table"
+      },
+      {
         "name": "@woldtwerk/drupal-once",
         "reference": "workspace:packages/drupal-once"
+      },
+      {
+        "name": "@woldtwerk/utils",
+        "reference": "workspace:packages/utils"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)|$))$)",
     "fallbackExclusionList": [
+      ["@woldtwerk/boring-table", ["workspace:packages/boring-table"]],
       ["@woldtwerk/drupal-once", ["workspace:packages/drupal-once"]],
+      ["@woldtwerk/utils", ["workspace:packages/utils"]],
       ["woldtwerk_utilities", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -3087,6 +3097,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@woldtwerk/boring-table", [
+        ["workspace:packages/boring-table", {
+          "packageLocation": "./packages/boring-table/",
+          "packageDependencies": [
+            ["@woldtwerk/boring-table", "workspace:packages/boring-table"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@woldtwerk/drupal-once", [
         ["workspace:packages/drupal-once", {
           "packageLocation": "./packages/drupal-once/",
@@ -3095,6 +3114,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.0.1"],
             ["jest", "virtual:c47faace14792d26b2dca745f9c85a337c619795accd537a2e2e1c16e87c28512f77d4c294b0997bfab255ab9010b38b669a101f50c927a8c718ae11b7ccf527#npm:27.1.1"],
             ["ts-jest", "virtual:abe06c1387d05ffde92baed64ad0345d76e5be575334853fec04d257ea6d75b5afe85d8b175a5d08b07a531bd59c8cdab7134b5fc2912a8d9464d244523dbdec#npm:27.0.5"],
+            ["vite", "npm:2.5.4"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@woldtwerk/utils", [
+        ["workspace:packages/utils", {
+          "packageLocation": "./packages/utils/",
+          "packageDependencies": [
+            ["@woldtwerk/utils", "workspace:packages/utils"],
             ["vite", "npm:2.5.4"]
           ],
           "linkType": "SOFT",
@@ -5128,6 +5157,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["eslint-module-utils", "npm:2.6.2"],
             ["debug", "virtual:d9426786c635bc4b52511d6cc4b56156f50d780a698c0e20fc6caf10d3be51cbf176e79cff882f4d42a23ff4d0f89fe94222849578214e7fbae0f2754c82af02#npm:3.2.7"],
+            ["eslint-import-resolver-node", "npm:0.3.6"],
             ["pkg-dir", "npm:2.0.0"]
           ],
           "linkType": "HARD",

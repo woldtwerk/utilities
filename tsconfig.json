@@ -1,20 +1,10 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": ["ESNext", "DOM"],
-    "moduleResolution": "Node",
-    "strict": true,
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noEmit": false,
-    "emitDeclarationOnly": true,
-    "declaration": true
-  }
-  // "references": [{ "path": "packages/utils" }]
+  // "files": [],
+  // "include": [],
+  "extends": "./tsconfig.shared.json"
+  // "references": [
+  //   { "path": "packages/boring-table" },
+  //   { "path": "packages/drupal-once" },
+  //   { "path": "packages/utils" },
+  // ]
 }
