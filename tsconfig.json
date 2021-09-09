@@ -12,6 +12,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "noEmit": true
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "declaration": true
   }
+  // "references": [{ "path": "packages/utils" }]
 }

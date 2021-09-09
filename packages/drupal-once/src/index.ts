@@ -21,15 +21,15 @@ declare global {
  * @param key Key to use as once ID.
  * @returns Array of onced elements.
  */
-NodeList.prototype.once = function (key = DEFAULT_KEY): Array<Element> {
+NodeList.prototype.once = function once(key = DEFAULT_KEY): Array<Element> {
   return Array.from(this as NodeListOf<Element>).filter((element: Element) => {
-    if (element.hasOwnProperty(ONCE_PROP)) {
-      if (element[ONCE_PROP]!.has(key)) return
+    if (ONCE_PROP in element) {
+      if (element[ONCE_PROP]!.has(key)) return false
       element[ONCE_PROP]!.add(key)
     } else {
       element[ONCE_PROP] = new Set([key])
     }
-    return element
+    return true
   })
 }
 
@@ -39,15 +39,17 @@ NodeList.prototype.once = function (key = DEFAULT_KEY): Array<Element> {
  * @param key Key to use as once ID.
  * @returns Array with Elements which once has been removed.
  */
-NodeList.prototype.removeOnce = function (key = DEFAULT_KEY): Array<Element> {
+NodeList.prototype.removeOnce = function removeOnce(
+  key = DEFAULT_KEY
+): Array<Element> {
   return Array.from(this as NodeListOf<Element>).filter((element: Element) => {
-    if (!element.hasOwnProperty(ONCE_PROP)) return
+    if (!(ONCE_PROP in element)) return false
     if (element[ONCE_PROP]!.size === 1) {
       delete element[ONCE_PROP]
     } else {
       element[ONCE_PROP]!.delete(key)
     }
-    return element
+    return true
   })
 }
 
@@ -61,8 +63,8 @@ NodeList.prototype.findOnce = function findOnce(
   key = DEFAULT_KEY
 ): Array<Element> {
   return Array.from(this as NodeListOf<Element>).filter((element: Element) => {
-    if (!element.hasOwnProperty(ONCE_PROP)) return
-    if (!element[ONCE_PROP]!.has(key)) return
-    return element
+    if (!(ONCE_PROP in element)) return false
+    if (!element[ONCE_PROP]!.has(key)) return false
+    return true
   })
 }
