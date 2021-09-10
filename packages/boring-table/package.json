@@ -1,0 +1,38 @@
+{
+  "name": "@woldtwerk/boring-table",
+  "version": "0.0.0",
+  "author": "Willi Woldt <woldt.willi@gmail.com>",
+  "description": "A boring responsive Table with cards on mobile",
+  "keywords": [
+    "responsive",
+    "table",
+    "typescipt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:woldtwerk/utilities.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "files": [
+    "src",
+    "dist",
+    "@types"
+  ],
+  "main": "dist/umd/index.js",
+  "module": "dist/es/index.js",
+  "types": "@types/index.d.ts",
+  "devDependencies": {
+    "vite": "^2.5.4"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@woldtwerk/utils": "workspace:packages/utils"
+  }
+}

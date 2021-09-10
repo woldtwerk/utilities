@@ -1,0 +1,32 @@
+$boring-table-breakpoint: 40rem;
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+@media screen and (max-width: $boring-table-breakpoint) {
+  table thead {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  tbody th {
+    display: block;
+  }
+
+  table tr {
+    display: block;
+  }
+
+  table td {
+    display: block;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+  }
+}
