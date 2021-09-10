@@ -75,6 +75,10 @@
         {
           "props": false
         }
+      ],
+      "arrow-body-style": [
+        "error",
+        "as-needed"
       ]
     }
   },

@@ -2,7 +2,7 @@
   "extends": "../../tsconfig.shared.json",
   "include": ["src"],
   "compilerOptions": {
-    "declarationDir": "./@types",
-    "rootDir": "./src"
+    "declarationDir": "./@types"
+    // "rootDir": "./src"
   }
 }

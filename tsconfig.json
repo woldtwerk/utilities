@@ -1,10 +1,3 @@
 {
-  // "files": [],
-  // "include": [],
   "extends": "./tsconfig.shared.json"
-  // "references": [
-  //   { "path": "packages/boring-table" },
-  //   { "path": "packages/drupal-once" },
-  //   { "path": "packages/utils" },
-  // ]
 }

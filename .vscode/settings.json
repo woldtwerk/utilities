@@ -7,9 +7,14 @@
   "files.exclude": {
     "yarn-error.log": true,
     ".yarn": true,
-    "dist": true,
+    "**/dist": true,
+    "**/@types": true,
     "**/node_modules": true,
-    ".pnp.js": true
+    ".pnp.js": true,
+    ".eslintcache": true,
+    ".pnp.*": true,
+    "**/vite-env.d.ts": true,
+    "**/tsconfig.tsbuildinfo": true
   },
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,

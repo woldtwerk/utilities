@@ -3101,7 +3101,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/boring-table", {
           "packageLocation": "./packages/boring-table/",
           "packageDependencies": [
-            ["@woldtwerk/boring-table", "workspace:packages/boring-table"]
+            ["@woldtwerk/boring-table", "workspace:packages/boring-table"],
+            ["@woldtwerk/utils", "workspace:packages/utils"],
+            ["vite", "npm:2.5.4"]
           ],
           "linkType": "SOFT",
         }]
@@ -3113,7 +3115,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@woldtwerk/drupal-once", "workspace:packages/drupal-once"],
             ["@types/jest", "npm:27.0.1"],
             ["jest", "virtual:c47faace14792d26b2dca745f9c85a337c619795accd537a2e2e1c16e87c28512f77d4c294b0997bfab255ab9010b38b669a101f50c927a8c718ae11b7ccf527#npm:27.1.1"],
-            ["ts-jest", "virtual:abe06c1387d05ffde92baed64ad0345d76e5be575334853fec04d257ea6d75b5afe85d8b175a5d08b07a531bd59c8cdab7134b5fc2912a8d9464d244523dbdec#npm:27.0.5"],
+            ["ts-jest", "virtual:9ffb407981e26fc6e50e48603975a0eaed7de09fb4731513493f65cc5e8a8642b5189093606ebb9e7b457543858666e118a34324f7e81c1a075f67465fe73fbd#npm:27.0.5"],
             ["vite", "npm:2.5.4"]
           ],
           "linkType": "SOFT",
@@ -3124,6 +3126,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/utils/",
           "packageDependencies": [
             ["@woldtwerk/utils", "workspace:packages/utils"],
+            ["@types/jest", "npm:27.0.1"],
+            ["jest", "virtual:c47faace14792d26b2dca745f9c85a337c619795accd537a2e2e1c16e87c28512f77d4c294b0997bfab255ab9010b38b669a101f50c927a8c718ae11b7ccf527#npm:27.1.1"],
+            ["ts-jest", "virtual:9ffb407981e26fc6e50e48603975a0eaed7de09fb4731513493f65cc5e8a8642b5189093606ebb9e7b457543858666e118a34324f7e81c1a075f67465fe73fbd#npm:27.0.5"],
             ["vite", "npm:2.5.4"]
           ],
           "linkType": "SOFT",
@@ -11141,10 +11146,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:abe06c1387d05ffde92baed64ad0345d76e5be575334853fec04d257ea6d75b5afe85d8b175a5d08b07a531bd59c8cdab7134b5fc2912a8d9464d244523dbdec#npm:27.0.5", {
-          "packageLocation": "./.yarn/__virtual__/ts-jest-virtual-bb1fd08f34/0/cache/ts-jest-npm-27.0.5-9336f30efa-fd53cdb6f9.zip/node_modules/ts-jest/",
+        ["virtual:9ffb407981e26fc6e50e48603975a0eaed7de09fb4731513493f65cc5e8a8642b5189093606ebb9e7b457543858666e118a34324f7e81c1a075f67465fe73fbd#npm:27.0.5", {
+          "packageLocation": "./.yarn/__virtual__/ts-jest-virtual-1d10b5b37c/0/cache/ts-jest-npm-27.0.5-9336f30efa-fd53cdb6f9.zip/node_modules/ts-jest/",
           "packageDependencies": [
-            ["ts-jest", "virtual:abe06c1387d05ffde92baed64ad0345d76e5be575334853fec04d257ea6d75b5afe85d8b175a5d08b07a531bd59c8cdab7134b5fc2912a8d9464d244523dbdec#npm:27.0.5"],
+            ["ts-jest", "virtual:9ffb407981e26fc6e50e48603975a0eaed7de09fb4731513493f65cc5e8a8642b5189093606ebb9e7b457543858666e118a34324f7e81c1a075f67465fe73fbd#npm:27.0.5"],
             ["@babel/core", null],
             ["@types/babel-jest", null],
             ["@types/babel__core", null],
